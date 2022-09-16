@@ -50,28 +50,12 @@ public class PrimaryController {
     }
 
     private Receitas guardarReceitaDoCadastro() {
-        String titulo = textFieldMarca.getText();
-        String ingredientes = textFieldModelo.getText();
-        String modo = textFieldPlaca.getText();
-        double custo = Double.valueOf( textFieldPreco.getText() );
-        String categoria = Integer.valueOf( textFieldAno.getText() );
+        String titulo = textFieldTitulo.getText();
+        String ingredientes = textFieldIngredientes.getText();
+        String modo = textFieldModo.getText();
+        double custo = Double.valueOf( textFieldCusto.getText() );
+        String categoria = textFieldCategoria.getText();
         
         return new Receitas(titulo, ingredientes, modo, custo, categoria);
-    }
-
-
-    /*FINALIZAR!!!!!! */
-    /*public void ordenarReceitasCadastradas(){
-        lista.sort((o1, o2) -> String.compare(o1.get(), o2.get()));
-
-        atualizarListView();
-    }
-
-    public void ordenarReceitasFavoritadas(){
-        lista.sort((o1, o2)PorA -> String.compare(o1.get(), o2.get()) );
-
-        atualizarListView();
-
-    }
-    /* */
+    } 
 }

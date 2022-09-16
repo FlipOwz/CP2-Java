@@ -49,7 +49,7 @@ public class Receitas implements Comparable<Receitas> {
         this.custo = custo;
     }
 
-    public int getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
 
@@ -62,8 +62,4 @@ public class Receitas implements Comparable<Receitas> {
         return "Título da receita:" + titulo + "\nIngredientes:" + ingredientes + "\nModo de preparo:" + modo + "\nR$" + custo + "\nCategoria:" + categoria;
     }
 
-    /*FINALIZAR!!!!!!*/
-    /*@Override
-    }
-    /**/
 }
